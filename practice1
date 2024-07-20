@@ -15,23 +15,24 @@
     body
     {
       background-color: black;
-      font-size: 20px;
       text-align: center;
-      
+      font-family: sans-serif;    
+      position: relative;
+      padding-bottom: 150px; 
     }
     img
     {
       position: relative;
       top: 40px;
-      height: 15%;
-      width: 15%;
+      height: 17%;
+      width: 17%;
     }
     h2{
       text-align: center;
       color: aliceblue;
       position: relative;
       top: 50px;
-      font-size: 3rem;
+      font-size: 40px;
       letter-spacing: 3px;
       height: 20px;
     }
@@ -40,14 +41,15 @@
       color: rgb(226, 240, 67);;
       position: relative;
       top: 60px;
-      font-size: 30px;
+      font-size: 25px;
+    
       
     }
     #front
     {
       color: white;
       position: relative;
-      top: 70px;
+      top: 90px;
       font-size: 30px;
     }
     button
@@ -56,7 +58,7 @@
       height: 100%;
       width: 50%;
       position: relative;
-      top: 70px;
+      top: 120px;
       padding: 15px;
       margin-bottom: 10px;
       background-color: rgb(71, 69, 69);
@@ -71,6 +73,7 @@
       background-color: rgb(226, 240, 67);
       color: black;
       cursor: pointer;
+      caret-color: black;
     }
   </style>
 </head>
