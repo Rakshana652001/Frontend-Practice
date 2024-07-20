@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+    body
+    {
+      background-color: black;
+      font-size: 20px;
+      text-align: center;
+      
+    }
+    img
+    {
+      position: relative;
+      top: 40px;
+      height: 15%;
+      width: 15%;
+    }
+    h2{
+      text-align: center;
+      color: aliceblue;
+      position: relative;
+      top: 50px;
+      font-size: 3rem;
+      letter-spacing: 3px;
+      height: 20px;
+    }
+    #london
+    {
+      color: rgb(226, 240, 67);;
+      position: relative;
+      top: 60px;
+      font-size: 30px;
+      
+    }
+    #front
+    {
+      color: white;
+      position: relative;
+      top: 70px;
+      font-size: 30px;
+    }
+    button
+    {
+      text-align: center;
+      height: 100%;
+      width: 50%;
+      position: relative;
+      top: 70px;
+      padding: 15px;
+      margin-bottom: 10px;
+      background-color: rgb(71, 69, 69);
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      bottom: 30px;
+      size: 20px;
+    }
+    button:hover
+    {
+      background-color: rgb(226, 240, 67);
+      color: black;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<img src="assets/images/avatar-jessica.jpeg" style="border-radius: 50%;">
+<h2>Jessica Randall</h2>
+<p id="london">London, United Kingdom</p>
+<p id="front">"Front-end developer and avid reader."</p>
+<button>GitHub</button>
+<button>Frontend Mentor</button>
+<button>LinkedIn</button>
+<button>Twitter</button>
+<button>Instagram</button>
+</body>
+</html>
