@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+    *
+    {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body
+    {
+      background-color: rgb(221, 248, 221);
+      box-sizing: border-box;
+      position: relative;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 90px;
+    }
+    #container
+    {
+      background-color: white;
+      padding: 4px;
+      padding-left: 40px;
+      padding-right: 50px;
+      padding-bottom: 40px;
+      margin-bottom: 100px;
+      border-radius: 12px;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      
+    }
+
+    #head
+    {
+      font-weight: normal;
+      font-size: 30px;
+    }
+    #fN
+    {
+      position: relative;
+      color: gray;
+    }
+
+    #name1
+    {
+      position: relative;
+      top: 10px;
+      width: 45%;
+      border-radius: 4px;
+      border-width: thin;
+      padding: 10px;
+    }
+
+    #name1:hover
+    {
+      border-width: 1.9px;
+      border-color: rgb(29, 101, 29);
+      cursor: pointer;
+    }
+
+    #lN
+    {
+      position: relative;
+      left: 7.9rem;
+      color: gray;
+    }
+
+    #name2
+    {
+      position: relative;
+      bottom: 27.5px;
+      left: 236px;
+      width: 46%;
+      border-radius: 4px;
+      border-width: thin;
+      padding: 10px;
+      padding-right: 17px;
+       
+    }
+
+    #name2:hover
+    {
+      border-width: 1.9px;
+      border-color: rgb(29, 101, 29);
+      cursor: pointer;
+    }
+
+    #eMail
+    {
+      color: gray;
+    }
+
+    #email
+    {
+      position: relative;
+      top: 10px;
+      border-radius: 4px;
+      width: 100%;
+      border-width: thin;
+      padding: 10px;
+    }
+    #email:hover
+    {
+      border-width: 1.9px;
+      border-color: rgb(29, 101, 29);
+      cursor: pointer;
+    }
+
+    #qT
+    {
+      position: relative;
+      top: 30px;
+      color: gray;
+    }
+    
+    #checkbox1
+    {
+      position: relative;
+      top: 39px; 
+      padding: 10px; 
+      padding-left: 30px;
+      background-color: white; 
+      border-radius: 4px; 
+      border-width: thin;
+      border-color: gray;
+      cursor: pointer;
+    }
+
+    #checkbox2
+    {
+      position: relative;
+      bottom: 17.5px;
+      padding: 10px; 
+      left: 230px;
+      margin-left: 5px;
+      width: 47%;
+      background-color: white; 
+      border-radius: 4px; 
+      border-width: thin;
+      border-color: gray;
+      cursor: pointer;
+    }
+
+    #label1
+    {
+      position: relative; 
+      top: .5rem; 
+      left: .5rem;
+      cursor: pointer;
+    }
+
+
+    #label2
+    {
+      position: relative; 
+      bottom: 3rem;
+      left: 15.1rem;
+    }
+
+    #checkbox1:hover{
+      background-color: rgb(208, 240, 208);
+    }
+    #checkbox2:hover{
+      background-color: rgb(208, 240, 208);
+    }
+    #color:hover
+    {
+      color: green;
+    }
+
+    button
+    {
+      width: 105%;
+      margin-top: 50px;
+      height: 35px;
+      text-align: center;
+      background-color: rgb(75, 126, 75);
+      border: transparent;
+      border-radius: 4px;
+      color: white;
+      
+    }
+    button:hover
+    {
+      background-color: rgb(6, 80, 6);
+      cursor: pointer;
+    }
+
+    input[type='checkbox'] 
+    {
+      accent-color: green;
+}
+   
+  </style>
+</head>
+<body>
+  <div id="container">
+    <form action="">
+      <h3 id="head">Contact Us</h3>
+        <td>
+          <label id="fN">First Name <span style="color: rgb(29, 101, 29);">*</span></label>
+          <label id="lN">Last Name <span style="color: rgb(29, 101, 29);">*</label><br>
+          <input type="text" id="name1" required>
+          <input type="text" id="name2" required>
+        </td><br>
+      <label id="eMail">Email Address <span style="color: rgb(29, 101, 29);">*</label><br>
+      <input type="email" id="email" required><br>
+
+      <label id="qT">Query Type <span style="color: rgb(29, 101, 29);">*</label><br>
+        
+        <td id="td">
+        <div>
+          <input id="checkbox1" readonly>
+        </div>
+        <span>
+        <input type="radio" id="checkbox1" style="position: relative; top: .5rem; left: .5rem; background-color: green; cursor: pointer; " >
+        <label id="label1" >General Enquiry</label></span>
+        <div>
+          <input id="checkbox2" readonly>
+        </div>
+        <span>
+        <input type="radio" style="position: relative; bottom: 3rem; left: 15.1rem; cursor: pointer;" >
+        <label id="label2">Support Request</label></span>
+      </td>
+      <label id="Message" style="position: relative; color: gray; right: 10.3rem; ">Message <span style="color: rgb(29, 101, 29);">*</label>
+        <textarea style="position: relative; top: 16px; width: 100%; padding-bottom: 50px; padding-left: 15px; border-radius: 4px; bottom: 10px;"></textarea><br><br>
+
+      <label id="color" style="position: relative; top: 10px;"><input type="checkbox" style="position: relative; top: 10px; cursor: pointer; background-color: green;" required><span style="position: relative; left: 13px;  top: 9px; cursor: pointer;">I consent to being contacted by the team *</span></label>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  
+
+  
+  <!-- This field is required
+
+  
+  This field is required
+
+  
+  Please enter a valid email address
+  This field is required
+
+  
+  
+  
+  Please select a query type
+
+  
+  This field is required
+
+ 
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon!
+  
+
+</body>
+</html>
