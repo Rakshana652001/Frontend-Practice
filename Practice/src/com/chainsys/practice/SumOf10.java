@@ -41,7 +41,5 @@ public class SumOf10 {
 			}
 		}
 		return temp==fixed;
-		
 	}
-
 }

@@ -1,6 +1,5 @@
 package com.chainsys.practice;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TwoDAddition {
@@ -36,7 +35,6 @@ public class TwoDAddition {
 			}
 		}
 		
-		
 		int sum[][] = new int[row][col];
 		for(int initial=0;initial<row;initial++)
 		{
@@ -57,8 +55,5 @@ public class TwoDAddition {
 		}
 		
 		scan.close();
-		// TODO Auto-generated method stub
-
 	}
-
 }

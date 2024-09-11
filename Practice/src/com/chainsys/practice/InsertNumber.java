@@ -31,10 +31,8 @@ public class InsertNumber {
 			arr[last] = arr[last-1];//4->3
 		}
 		
-		arr[position] = numToInsert;
-		
+		arr[position] = numToInsert;		
 		System.out.println("After inserting: "+Arrays.toString(arr));
 		scan.close();
 	}
-
 }

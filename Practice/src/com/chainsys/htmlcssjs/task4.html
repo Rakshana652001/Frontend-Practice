@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 id="h1name">Name</h1>
+	<button id="name" onclick="change(event)">Rakshana</button>
+	<button id="name" onclick="change(event)">Anitha</button>
+	<button id="name" onclick="change(event)">Ram</button>
+	
+	<script type="text/javascript">
+		var h1name = document.getElementById("h1name")
+
+		function change(event)
+		{
+			h1name.textContent = event.target.textContent
+		}
+	</script>
+</body>
+</html>

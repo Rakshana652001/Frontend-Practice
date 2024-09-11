@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style type="text/css">
+	*{
+		font-family: 'Poppins', sans-serif;
+		margin: 0;
+		padding: 0;
+	 }
+	
+	nav
+	{
+		background-color: #fd6569;
+		position: relative;
+		top: 0px;
+		border-radius: 4px;
+		padding: 20px;
+		margin: 0;
+		font-size: 30px;
+	}
+	
+	#para
+	{
+		padding: 20px;
+		display: flex;
+	}
+	
+	.para1
+	{
+		background-color: black;
+		width: 25%;
+		color: white;
+		border-radius: 8px; 
+		position: relative;
+		left: 50px;
+		top: 50px;
+		padding: 20px;
+		margin-left: 30px;
+	}
+	
+	h1
+	{
+		color: #fd6569;
+	}
+	
+	button
+	{
+		background-color: #fd6569;
+		border-radius: 12px;
+		padding: 5px;	
+		cursor: pointer;
+	}
+	
+	#plus
+	{
+		position: fixed;
+		left: 73rem;
+		top: 30rem;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-radius: 100%;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	
+	#popBack
+	{
+		background-color: black;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		z-index: 1;
+		display: none;
+	}
+	
+	#popup
+	{
+		background-color: #fd6569;
+		width: 26%;
+		position: fixed;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		padding-right: 20px;
+		padding-left: 30px;
+		bottom: 20rem;
+		left: 30rem;	
+		border-radius: 12px;
+		height: 15rem;
+		display: none;
+		z-index: 1;
+		bottom: 10rem;
+	
+	}
+	
+	#addBook
+	{
+		color: black;	
+	}
+	
+	#title
+	{
+		background: none;
+		border: none;
+		border-bottom: solid black 2px;
+		width: 20rem;
+		outline: none;
+	}
+	
+	#author
+	{
+		background: none;
+		border: none;
+		border-bottom: solid black 2px;
+		width: 20rem;
+		position: relative;
+		top: 4px;
+		outline: none;
+	}
+	
+	#author::placeholder
+	{
+		color: black;
+	}
+	
+	#title::placeholder 
+	{
+    	color: black;
+	}
+	
+	#area
+	{
+		border: black;
+		position: relative;
+		top: 15px;
+		border: 2px solid black;
+		background: none;
+		height: 50%;
+		width: 20rem;
+		height: 5rem;
+	}
+	
+	#area::placeholder
+	{
+		color: black;
+	}
+	
+	#area:focus
+	{
+		outline: none;
+	}
+	#add
+	{
+		position: relative;
+		top: 20px;
+		border-radius: 12px;
+		background-color: black;
+		color: white;
+		width: 5rem;	
+	}
+	
+	#authorName
+	{
+		font-size:15px;
+	}
+
+</style>
+</head>
+<body>
+	<div id="popBack"></div>
+	<nav><strong>BookSky</strong></nav>
+	
+	<div id="para">
+		<div class="para1">
+			<h1>Book Name</h1>
+			<p id="authorName">Author Name</p>
+			<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available</p>
+			<button onclick="deleteBook(event)" style="position: relative; top: 13px; margin-bottom: 10px;">Delete</button>
+		</div>
+	</div>
+	
+	<button id="plus" onclick="change()"><strong>+</strong></button>
+	
+	<div id="popup">
+		<form>
+			<h3 id="addBook"><strong>Add Book</strong></h3>
+			<input type="text" placeholder="Book Title" id="title"><br>
+			<input type="text" placeholder="Book Author" id="author"><br>
+			<textarea placeholder="Short Description..." id="area"></textarea><br>
+			<button id="add" onclick="addBook()">Add</button>
+			<button id="add" onclick="close(event)">Close</button>
+		</form>
+	</div>
+	
+	<script type="text/javascript">
+		var plus = document.getElementById("plus")
+		var popBack = document.getElementById("popBack")
+		var popup = document.getElementById("popup")
+		
+		
+		function change(event)
+		{
+			popBack.style.display = "block"
+			popup.style.display = "block"
+		}
+		
+		function close(event)
+		{
+			event.preventDefault()
+			popBack.style.display = "none"
+			popup.style.display = "none"
+		}
+		
+		function deleteBook(event)
+		{
+			event.target.parentElement.remove()
+		}
+		
+		function addBook()
+		{
+			var para = document.getElementById("para")
+			var title = document.getElementById("title").value
+			var author = document.getElementById("author").value
+			var area = document.getElementById("area").value
+			
+			var createElements = document.createElement("div")
+			createElements.setAttribute("class", "para1")
+			createElements.innerHTML = `<h1>Book Title: ${title}</h1><p>Written by: ${author}</p><p>${area}</p>
+			    <button onclick="deleteBook(event)">Delete</button>`
+			para.append(createElements)
+
+			event.preventDefault()
+			popBack.style.display = "none"
+			popup.style.display = "none"
+			
+		}
+	</script>
+</body>
+</html>

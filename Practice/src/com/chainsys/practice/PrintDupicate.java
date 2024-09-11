@@ -2,8 +2,8 @@ package com.chainsys.practice;
 
 import java.util.Scanner;
 
-public class PrintDupicate {
-
+public class PrintDupicate 
+{
 	public static void main(String[] args) 
 	{
 		Scanner scan = new Scanner(System.in);
@@ -16,6 +16,7 @@ public class PrintDupicate {
 		{
 			arr[initial] = scan.nextInt();
 		}
+		
 		//1234
 		for(int i=0;i<num-1;i++)//1->3
 		{
@@ -29,5 +30,4 @@ public class PrintDupicate {
 		}
 		scan.close();
 	}
-
 }

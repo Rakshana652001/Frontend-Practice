@@ -43,5 +43,4 @@ public class PrintSecondMin {
 		System.out.println("2nd min: "+secondMin);
 		scan.close();
 	}
-
 }

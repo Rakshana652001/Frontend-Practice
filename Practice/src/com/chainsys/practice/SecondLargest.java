@@ -22,7 +22,7 @@ public class SecondLargest {
 		int index = num-1;
 		for(int i=0;i<num;i++)
 		{
-			if(arr[num-1]== arr[index])
+			if(arr[num-1] == arr[index])
 			{
 				index--;
 			}

@@ -11,7 +11,6 @@ var minutes = date.getMinutes();
 var seconds = date.getSeconds();
 
 var ampm = (hours>=12) ? "PM" : "AM";
-
 hours = (hours>=12) ? hours-12 : hours;
 
 if(hours === 0 && ampm === "PM")
@@ -27,5 +26,4 @@ if(hours === 0 && ampm === "PM")
 		ampm = 'PM';
 	}
 }
-
 console.log("Time Now: "+hours+" "+ampm+":"+minutes+":"+seconds);

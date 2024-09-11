@@ -17,8 +17,8 @@ public class SortNumericAndStringarray
 		for(int initial=0;initial<num1;initial++)
 		{
 			array1[initial] = scan.nextInt();
-			
 		}
+		
 		System.out.println("Array 1"+Arrays.toString(array1));
 		Arrays.sort(array1);
 		System.out.println("Sorted Array: "+ Arrays.toString(array1));
@@ -33,7 +33,6 @@ public class SortNumericAndStringarray
 			array2[initial]=scan.next();
 		}
 		
-		
 		System.out.println("Array2"+Arrays.toString(array2));
 		
 		Arrays.sort(array2);
@@ -42,5 +41,4 @@ public class SortNumericAndStringarray
 		
 		scan.close();
 	}
-
 }

@@ -1,7 +1,7 @@
 function cToF (celcius)
 {
 	var cDegree = celcius;
-	var convert = cDegree * 9/5 +32;
+	var convert = cDegree * 9/5 + 32;
 	var result = cDegree +'\xB0C is '+convert+'\xB0F.';
 	console.log(result);
 }

@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class SmallestPositiveMisssingNumber 
 {
 	static Scanner scan = new Scanner(System.in);
+	
 	public static void main(String args[])
 	{
 		System.out.println("Enter number for array: ");
@@ -19,6 +20,7 @@ public class SmallestPositiveMisssingNumber
 		int missingDigit = getMissingDigit(arr, number);
 		System.out.println("Missing digit is: "+missingDigit);
 	}
+	
 	private static int getMissingDigit(int[] arr, int number)
 	{
 		int positiveDigits[] = Arrays.stream(arr).filter(x -> x>0).toArray();
@@ -32,11 +34,11 @@ public class SmallestPositiveMisssingNumber
 			{
 				positive++;
 			}
-
 		}
 		return positive;
 	}
-	private static int getNumber() 
+	
+	private static int getNumber()
 	{
 		int number = scan.nextInt();
 		if(number<5)

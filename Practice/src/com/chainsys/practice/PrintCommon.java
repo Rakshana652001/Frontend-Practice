@@ -13,7 +13,7 @@ public class PrintCommon {
 		int num1 = scan.nextInt();
 		
 		String arr[] = new String[num1];
-		for(int i = 0;i<num1;i++)
+		for(int i = 0; i<num1; i++)
 		{
 			arr[i] = scan.next();
 		}
@@ -40,11 +40,8 @@ public class PrintCommon {
 				}
 			}
 		}
-		System.out.println(list);
 		
+		System.out.println(list);		
 		scan.close();
-		// TODO Auto-generated method stub
-
 	}
-
 }

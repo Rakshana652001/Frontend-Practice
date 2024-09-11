@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<button onclick="add()">Add</button>
+	<div id="getText"></div>
+	
+	<script type="text/javascript">
+		var getText = document.getElementById("getText")
+		
+		function add()
+		{
+			var list = document.createElement("h1")
+			list.textContent = "Hello"
+			getText.append(list)
+		}
+	</script>
+</body>
+</html>

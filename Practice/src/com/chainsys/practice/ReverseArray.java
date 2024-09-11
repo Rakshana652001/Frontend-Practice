@@ -28,7 +28,5 @@ public class ReverseArray {
 		}
 		System.out.println("After reverse: "+Arrays.toString(arr));
 		scan.close();
-
 	}
-
 }

@@ -21,5 +21,4 @@ public class SmallLargest {
 		System.out.println("Largest: "+arr[num-1]);
 		scan.close();
 	}
-
 }

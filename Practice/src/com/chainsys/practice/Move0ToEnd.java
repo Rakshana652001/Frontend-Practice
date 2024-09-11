@@ -47,5 +47,4 @@ public class Move0ToEnd
 		
 		scan.close();
 	}
-
 }

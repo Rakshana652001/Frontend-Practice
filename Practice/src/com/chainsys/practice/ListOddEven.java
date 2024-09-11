@@ -37,7 +37,5 @@ public class ListOddEven {
 		System.out.println(odd);
 		
 		scan.close();
-
 	}
-
 }

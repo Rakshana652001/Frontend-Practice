@@ -20,13 +20,11 @@ public class SummArray
 		{
 			array[initial] = scan.nextInt();
 			sum += array[initial];
-			average = sum/num;
-			
+			average = sum/num;	
 		}
 		System.out.println("Added Array: "+sum);
 		System.out.println("Average: "+average);
 		
 		scan.close();
 	}
-
 }

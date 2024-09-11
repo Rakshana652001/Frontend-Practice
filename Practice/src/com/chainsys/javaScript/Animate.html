@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title></title>
 </head>
 <body onload="animateString('name')">
 
 <pre id="name">Rakshana     </pre>
+<div id="vertical-text-container" style="height: 300px; width: 500px; overflow: hidden; position: relative;">
+    <div id="vertical-text" style="position: absolute;">
+        <pre>Rakshana</pre>   
+    </div>
+</div>
 
 <script type="text/javascript">
 function animateString(id) 
@@ -24,6 +29,22 @@ function animateString(id)
         textNode.data = text;
     }, 100);
 } 
+
+function animate_vertical_string(id) {
+    var element = document.getElementById(id);
+    var currentTop = 0; // Keeps track of the current top position
+    var elementHeight = element.offsetHeight; // Gets the height of the element
+
+    setInterval(function () {
+        currentTop -= 2; // Move text upwards by 20px each time
+        if (Math.abs(currentTop) >= elementHeight) {
+            currentTop = 0; // Reset when the text has fully scrolled through
+        }
+        element.style.top = currentTop + "px"; // Set the new top position
+    }, 100);
+}
+
+animate_vertical_string('vertical-text');
 </script>
 </body>
 </html>

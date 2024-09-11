@@ -1,6 +1,5 @@
 package com.chainsys.practice;
 
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class PrintCommon2 {
@@ -39,10 +38,6 @@ public class PrintCommon2 {
 			}
 		}
 		
-		
 		scan.close();
-		// TODO Auto-generated method stub
-
 	}
-
 }

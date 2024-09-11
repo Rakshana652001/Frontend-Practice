@@ -35,7 +35,6 @@ public class FindMissingNumber {
 		System.out.println(sum-total);
 		
 		scan.close();
-		// TODO Auto-generated method stub
 
 	}
 

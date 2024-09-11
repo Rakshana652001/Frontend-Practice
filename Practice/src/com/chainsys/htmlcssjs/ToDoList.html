@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<input id="input1" type="text">
+	<button onclick="add()">Add</button>
+	
+	<ul id="list">
+		<li>Hello <button onclick="deleteItem(event)">Delete</button></li><br>
+	</ul>
+	
+	<script type="text/javascript">
+		var input = document.getElementById("input1")
+		var list = document.getElementById("list")
+		
+		function add()
+		{
+			var listItem = document.createElement("li")
+			listItem.innerHTML = input.value + " <button onclick='deleteItem(event)'>Delete</button><br><br>"
+			list.append(listItem)
+		}
+		
+		function deleteItem(event)
+		{
+			event.target.parentElement.remove()
+		}
+		
+	</script>
+</body>
+</html>

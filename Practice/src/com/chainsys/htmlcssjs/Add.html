@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	num1: <input type="number" id="num1"><br><br>
+	num2: <input type="number" id="num2"><br><br>
+	<button onclick="add()">Add</button>
+	<p>Result: <span id="getResult"></span></p> 
+	
+	<script type="text/javascript">
+		var num1 = document.getElementById("num1")
+		var num2 = document.getElementById("num2")
+		var result = document.getElementById("getResult")
+		
+		function add()
+		{
+			//var total = num1.value + num2.value append
+			var total = Number(num1.value) + Number(num2.value)  //add
+			result.textContent = total
+		}
+	</script>
+</body>
+</html>

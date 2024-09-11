@@ -18,7 +18,6 @@ public class RemoveDuplicates {
 		
 		System.out.println("Count after remove: "+getCount(arr));
 		scan.close();
-
 	}
 
 	private static int getCount(int[] arr)
@@ -33,5 +32,4 @@ public class RemoveDuplicates {
 		}
 		return index;
 	}
-
 }

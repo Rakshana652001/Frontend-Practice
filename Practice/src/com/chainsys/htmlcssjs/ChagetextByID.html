@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 id="hello">Hello</h1>
+	<button onclick="change()">Change</button>
+	
+	<script type="text/javascript">
+		var getH1 = document.getElementById("hello")
+		console.log(getH1.textContent)
+		
+		
+		
+		function change()
+		{
+			getH1.textContent = "Bye"
+		}
+	</script>
+</body>
+</html>

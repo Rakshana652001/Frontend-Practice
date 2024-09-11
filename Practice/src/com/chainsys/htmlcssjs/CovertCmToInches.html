@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="ISO-8859-1">
+<title>cm to inches</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style type="text/css">
+	body
+	{
+	    font-family: 'Poppins', sans-serif;
+		background-color: #FFFFC5;
+	}
+	
+	h3
+	{
+		letter-spacing: 2px;
+	}
+	
+	#div1
+	{
+		background-color: black;
+		color: #FFFFC5;
+		border-radius: 4px;
+		width: 20%;
+		padding: 20px;
+		position: absolute;
+		left: 35%;
+		height: 60%;
+		top: 100px;
+	}
+	
+	#num
+	{
+		padding: 7px;
+	}
+	
+	#num:focus
+	{
+		outline: none;
+	}
+	
+	#convert
+	{
+		padding: 7px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: #FFFFC5;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	
+	#result
+	{
+		background: none;
+		border: none;
+		color: white;
+		position: relative;
+		left: 70px;
+	}
+	
+	#result:focus
+	{
+		outline: none;
+		background: none;
+		border: none;
+	}
+</style>
+</head>
+<body>
+	<div id="div1">
+		<center><h3>cm to inches</h3><br></center>
+		<center><input type="number" id="num" onkeyup="change()"><br><br></center>
+		<center><button id="convert"><strong>Convert to Inches</strong></button><br><br></center>
+		<center><input id="result"></center>
+	</div>
+	
+	<script type="text/javascript">
+		var num = document.getElementById("num")
+		var result = document.getElementById("result")
+		var convert = document.getElementById("convert")
+		
+		/* convert.addEventListener("click", function(){
+			var numberValue = num.value
+			var convertNumber = numberValue/2.54
+			result.value = convertNumber.toFixed(4);
+		}) */
+	
+		function change()
+		{
+			var numberValue = num.value
+			var convertNumber = numberValue/2.54
+			result.value = convertNumber.toFixed(2);
+		}
+	</script>
+</body>
+</html>
